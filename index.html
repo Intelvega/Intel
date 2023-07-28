@@ -1,206 +1,226 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-</head>
-<style>
+<html>
+    <head>
+        <title>Meu Projeto Final!</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <section class="main">
+            <div class="center">
+                <div class="menu">
+                    <div class="logo-menu">
+                        <a href="/"><img src="images/logoagencia.svg" /></a>
+                    </div>
+                    <div class="items-menu">
+                        <a href="#">Início</a>
+                        <a href="#">Por que nós?</a>
+                        <a href="#">Depoimentos</a>
+                        <a class="contact-btn" href="">Entre em Contato</a>
+                    </div>
+                    <div class="items-menu-mobile">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                        <div class="menu-mobile">
+                            <a href="#">Início</a>
+                            <a href="#">Por que nós?</a>
+                            <a href="#">Depoimentos</a>
+                        </div>
+                    </div>
+                </div><!--menu-->
 
-    html,body{
-        display: flex;
-        /* border: 1px solid black; */
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        /* para os dois tomarem 100% */
-    }
+                <div class="mockup">
+                    <h1>Promova experiências aos seus clientes</h1>
+                    <br/>
+                    <p>E veja resultados expressivos dia após dia</p>
+                    <br/>
+                    <img src="images/mockup.svg" />
+                </div><!--mockup-->
 
-    .Calculadora{
-        /* background-color: black; */
-        display: flex;
-        width: 20%;
-        height: 80%;
-        /* border: 1px solid blue; */
-        flex-direction: column;
-    }
-    .textarea{
-    display: flex;
-    width: 100%;
-    height: 100px;
-    box-sizing: border-box; /* Adicione esta propriedade */
-    font-size: 55px;
-    text-align: right;
-    }
-
-    .painel-buttons{
-        display: flex;
-        /* background-color: aqua; */
-        height: 100%;
-        flex-direction: row;
-    }
-    .numeros{
-        display: flex;
-        /* border: 1px solid red; */
-        width: 70%;
-        
-    }
-
-    .numeros button{
-        width: 49%;
-        font-size: 60px;
-    }
-
-    
-    .num{
-        width: 100%;
-        /* border: 2px solid black; */
-        flex-direction: row;
-    }
-
-    .sinais{
-        display: flex;
-        flex-direction: column;
-        /* border: 1px solid black; */
-        width: 30%;   
-    }
-
-    .sinais button{
-        font-size: 60px;
-    }
-
-    @media screen and (max-width: 1500px) {
-        .Calculadora{
-            width: 50%;
-        }
-        .numeros button{
-        width: 40%;
-        font-size: 30px;
-    }
-
-    .sinais button{
-        font-size: 30px;
-        padding: 2px;
-    }
-    }
+            </div><!--center-->
+        </section><!--main-->
 
 
-</style>
-<body>
-    
-    
-    <div class="Calculadora">
+        <section class="marcas">
+            <div class="center">
+                <img src="images/LOGO1.png" />
+                <img src="images/LOGO2.png" />
+                <img src="images/LOGO3.png" />
+                <img src="images/LOGO4.png" />
+                <img src="images/LOGO5.png" />
 
-        <div class="painel">
-            <input id="area" class="textarea" placeholder="valor" type="textarea">
-        </div>
+            </div><!--center-->
+        </section><!--marcas-->
 
-            <div class="painel-buttons">
+
+        <section class="porque-nos">
+            <div class="center">
+                <h2>Por Que Nós?</h2>
+                <p>Uma experiência incrível para seus clientes, resultados espetaculares para sua empresa.</p>
+
+                <div class="diferenciais">
+                    <div class="box-diferenciais">
+                        <img src="images/icon1.svg" />
+                        <h3>Planejamento impecável</h3>
+                        <p>Conte com a Agência Bold como sua parceira no planejamento de seus projetos, conteúdos, campanhas, estratégias. Nossos profissionais altamente qualificados estão preparados para qualquer desafio.</p>
+                    </div>
+                    <div class="box-diferenciais">
+                        <img src="images/icon2.svg" />
+                        <h3>Planejamento impecável</h3>
+                        <p>Conte com a Agência Bold como sua parceira no planejamento de seus projetos, conteúdos, campanhas, estratégias. Nossos profissionais altamente qualificados estão preparados para qualquer desafio.</p>
+                    </div>
+                    <div class="box-diferenciais">
+                        <img src="images/icon3.svg" />
+                        <h3>Planejamento impecável</h3>
+                        <p>Conte com a Agência Bold como sua parceira no planejamento de seus projetos, conteúdos, campanhas, estratégias. Nossos profissionais altamente qualificados estão preparados para qualquer desafio.</p>
+                    </div>
+                </div><!--diferenciais-->
+
+
+
+            </div><!--center-->
+        </section><!--porquenos-->
+
+        <section class="cta">
+
+            
+             <h2>Vamos Começar Seu Projeto?</h2>
+             <h4>Fale agora mesmo com um de nossos consultores!</h4>
+             <a href="/contato">Entrar em Contato</a>
+            
+
+        </section><!--cta-->
+
+        <section class="beneficios">
+            <div style="max-width: 1280px;" class="center">
+                <div class="lista-beneficios">
+                    <h1>Benefícios Para Você</h1>
+                    <br/>
+                    <p><img src="images/checklist.svg" /><span>Garantia de resultados, pague de acordo com o desempenho do seu projeto ou campanha.</span></p>
+                    <p><img src="images/checklist.svg" /><span>Garantia de resultados, pague de acordo com o desempenho do seu projeto ou campanha.</span></p>
+                    <p><img src="images/checklist.svg" /><span>Garantia de resultados, pague de acordo com o desempenho do seu projeto ou campanha.</span></p>
+                    <p><img src="images/checklist.svg" /><span>Garantia de resultados, pague de acordo com o desempenho do seu projeto ou campanha.</span></p>
+                </div>
+                <div class="img-beneficios">
+                    <img src="images/mackbook.png" />
+                </div>
+            </div><!--center-->
+        </section><!--beneficios-->
+
+
+        <section class="depoimentos">
+            <h1>Depoimentos</h1>
+            <div style="display:block;" class="center">
+                <br/>
+                <div style="max-width: 1200px;" class="container-slider">
+
+                    <div class="container-slider-single">
+                        <img src="images/DEPOIMENTO1.png" />
+                        <h3>Miriam Souza</h3>
+                        <p>O trabalho da Agência Bold foi fundamental para o nosso posicionamento e nossas estratégias de 2021. Juntos tivemos excelentes resultados e nossos clientes ficaram surpresos com a qualidade. Foi um trabalho incrível feito a muitas mãos pela Uber e pelo time da Agência Bold.</p>
+                        <img src="images/RATE.svg" />
+                    </div>
+                   
+                    <div class="container-slider-single">
+                        <img src="images/DEPOIMENTO1.png" />
+                        <h3>Miriam Souza</h3>
+                        <p>O trabalho da Agência Bold foi fundamental para o nosso posicionamento e nossas estratégias de 2021. Juntos tivemos excelentes resultados e nossos clientes ficaram surpresos com a qualidade. Foi um trabalho incrível feito a muitas mãos pela Uber e pelo time da Agência Bold.</p>
+                        <img src="images/RATE.svg" />
+                    </div>
+                    <div class="container-slider-single">
+                        <img src="images/DEPOIMENTO1.png" />
+                        <h3>Miriam Souza</h3>
+                        <p>O trabalho da Agência Bold foi fundamental para o nosso posicionamento e nossas estratégias de 2021. Juntos tivemos excelentes resultados e nossos clientes ficaram surpresos com a qualidade. Foi um trabalho incrível feito a muitas mãos pela Uber e pelo time da Agência Bold.</p>
+                        <img src="images/RATE.svg" />
+                    </div>
+                    <div class="container-slider-single">
+                        <img src="images/DEPOIMENTO1.png" />
+                        <h3>Miriam Souza</h3>
+                        <p>O trabalho da Agência Bold foi fundamental para o nosso posicionamento e nossas estratégias de 2021. Juntos tivemos excelentes resultados e nossos clientes ficaram surpresos com a qualidade. Foi um trabalho incrível feito a muitas mãos pela Uber e pelo time da Agência Bold.</p>
+                        <img src="images/RATE.svg" />
+                    </div>
+                    <div class="container-slider-single">
+                        <img src="images/DEPOIMENTO1.png" />
+                        <h3>Miriam Souza</h3>
+                        <p>O trabalho da Agência Bold foi fundamental para o nosso posicionamento e nossas estratégias de 2021. Juntos tivemos excelentes resultados e nossos clientes ficaram surpresos com a qualidade. Foi um trabalho incrível feito a muitas mãos pela Uber e pelo time da Agência Bold.</p>
+                        <img src="images/RATE.svg" />
+                    </div>
+                    <div class="container-slider-single">
+                        <img src="images/DEPOIMENTO1.png" />
+                        <h3>Miriam Souza</h3>
+                        <p>O trabalho da Agência Bold foi fundamental para o nosso posicionamento e nossas estratégias de 2021. Juntos tivemos excelentes resultados e nossos clientes ficaram surpresos com a qualidade. Foi um trabalho incrível feito a muitas mãos pela Uber e pelo time da Agência Bold.</p>
+                        <img src="images/RATE.svg" />
+                    </div>
+                </div>
                 
-                <div class="numeros" >
-                <div class="num">
-                <button class="numero" >0</button>
-                <button class="numero">1</button>
-                <button class="numero">2</button>
-                <button class="numero">3</button>
-                <button class="numero">4</button>
-                <button class="numero">5</button>
-                <button class="numero">6</button>
-                <button class="numero">7</button>
-                <button class="numero">8</button>
-                <button class="numero">9</button>
-                <!-- nao vai pra id pegando todas as ocorencias pq id é unico -->
-                </div>
-                </div>
+            </div>
 
-                <div class="sinais">
-                    <button class="JSClass">/</button>
-                    <button class="JSClass">x</button>
-                    <button class="JSClass">-</button>
-                    <button class="JSClass">+</button>
-                    <button id="JSIgual">=</button>
-                    <button id="Apagar">AC</button>
+        </section>
+
+        <section class="contato">
+            <h1>Entre em Contato</h1>
+            <div style="max-width: 900px;" class="center">
                 
-                </div>
+                <form method="post">
+                    <input type="text" placeholder="Seu Nome..." />
+                    <input type="email" placeholder="Seu e-mail" />
+                    <textarea placeholder="Sua Mensagem..."></textarea>
+                    <input type="submit" name="acao" value="Enviar!"
+                </form>
+            </div>
+        </section>
 
+        <footer>
+            <div style="max-width: 1280px;" class="center">
+                <div class="text-footer">
+                    <p>Todos os direitos reservados a Danki Code</p>
                 </div>
+                <div class="items-menu">
+                    <a href="#">Início</a>
+                        <a href="#">Por que nós?</a>
+                        <a href="#">Depoimentos</a>
+                        <a class="contact-btn" href="">Entre em Contato</a>
+                </div>
+            </div>
+        </footer>
 
+        <script src="jquery.js"></script>
+        <script src="slick.min.js"></script>
+        <script>
+                $('.container-slider').slick({
+                dots: true,
+                arrows:false,
+                speed:1000,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                pauseOnHover:false,
+                responsive: [
+                            {
+                              breakpoint: 768,
+                              settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1
+                              }
+                            }],
+                });
+        </script>
+        <script>
+            var menuBtn = document.querySelector('.items-menu-mobile i');
+            menuBtn.addEventListener('click',()=>{
+                let itemsMenu = document.querySelector('.menu-mobile');
+                if(itemsMenu.classList.contains('show')){
+                    itemsMenu.classList.remove('show');
+                    itemsMenu.classList.add('hide');
+                }else{
+                    itemsMenu.classList.remove('hide');
+                    itemsMenu.classList.add('show');
+                }
+                
+            });
+        </script>
         
-    </div>
-    <!-- ... seu código HTML ... -->
-
-<script>
-    let numero = document.getElementsByClassName('numero');
-    let area = document.getElementById('area');
-    let digito = ''; // Inicializa o primeiro número
-    let sin = ''; // Inicializa o sinal de operação
-    let digito2 = ''; // Inicializa o segundo número
-  
-    for (let button of numero) {
-      button.addEventListener('click', () => {
-        if (!sin) {
-          // Se o sinal não foi selecionado, o número pertence ao primeiro dígito
-          digito += button.textContent;
-          area.placeholder = `${digito}`;
-        } else {
-          // Caso contrário, pertence ao segundo dígito
-          digito2 += button.textContent;
-          area.placeholder = `${digito} ${sin} ${digito2}`;
-        }
-      });
-    }
-  
-    let sinais = document.getElementsByClassName('JSClass');
-  
-    for (let sinal of sinais) {
-      sinal.addEventListener('click', () => {
-        sin = sinal.textContent;
-        area.placeholder = `${digito} ${sin}`;
-      });
-    }
-  
-    let SinalIgual = document.getElementById('JSIgual');
-  
-    SinalIgual.addEventListener('click', () => {
-      if (digito && sin && digito2) {
-        // Verifica se todos os valores necessários estão presentes
-        let conteudoSinal = SinalIgual.textContent;
-        let res;
-  
-        switch (sin) {
-          case '+':
-            res = Number(digito) + Number(digito2);
-            break;
-          case '-':
-            res = Number(digito) - Number(digito2);
-            break;
-          case 'x':
-            res = Number(digito) * Number(digito2);
-            break;
-          case '/':
-            res = Number(digito) / Number(digito2);
-            break;
-          default:
-            res = 'Operação inválida';
-        }
-  
-        area.placeholder = `${digito} ${sin} ${digito2}: ${res}`;
-        digito = res.toString(); // Define o resultado como primeiro dígito para permitir novas operações
-        digito2 = ''; // Reinicia o segundo dígito
-        sin = ''; // Reinicia o sinal
-      }
-    });
-  
-    let Apagar = document.getElementById('Apagar');
-    Apagar.addEventListener('click', () => {
-      digito = '';
-      sin = '';
-      digito2 = '';
-      area.placeholder = '';
-    });
-  </script>
-
-</body>
+    </body>
 </html>
